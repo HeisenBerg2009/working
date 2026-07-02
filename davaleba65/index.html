@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luka Mircxulava's Site</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body
+    style="
+      background-image: url(&quot;./assets/images/background.jpg&quot;);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      background-color: darkseagreen;
+    "
+  >
+    <header>
+      <h1
+        style="
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-size: 30px;
+          color: #fff;
+          text-align: center;
+          text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        "
+      >
+        შეიძინეთ სახლები და იცხოვრეთ გემრიელად
+      </h1>
+      <p
+        style="
+          margin-top: 10px;
+          text-align: center;
+          color: #fff;
+          font-size: 18px;
+          text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        "
+      >
+        ჩვენ გთავაზობთ საუკეთესო სახლების არჩევანს, რომელიც დაგეხმარებათ
+        კომფორტულად იცხოვროთ.
+      </p>
+    </header>
+    <div id="search">
+      search: <input id="searchInp" type="text" placeholder="search" />
+    </div>
+
+    <select
+      id="priceFilter"
+      style="
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        background-color: #fff;
+        color: #333;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: bisque;
+        color: darkseagreen;
+      "
+    >
+      <option value="all">ყველა ფასი</option>
+      <option value="100000">100,000$-მდე</option>
+      <option value="300000">300,000$-მდე</option>
+      <option value="500000">500,000$-მდე</option>
+      <option value="1000000">1,000,000$-მდე</option>
+    </select>
+
+    <section id="houses"></section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
